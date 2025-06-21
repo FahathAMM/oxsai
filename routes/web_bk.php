@@ -57,7 +57,6 @@ Route::middleware('auth')->group(function () {
     Route::get('order/order-invoice-pdf-download/{orderid}', [OrderController::class, 'downloadInvoicePDF']);
     Route::get('order/order-invoice-pdf-email/{orderid}', [OrderController::class, 'sendMailToCustomer']);
 
-    Route::resource('order/pickup', PickupController::class);
     Route::get('shipment/pickup/get-pickup-tracking-info-by-trackId/{trackingId}', [PickupController::class, 'getPickupTrackingByPickupTrackingId']);
     Route::get('order/return-order/{orderid}', [PickupController::class, 'returnOrder']);
 
