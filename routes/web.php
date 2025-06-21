@@ -30,7 +30,6 @@ use App\Http\Controllers\Pages\Solution\SolutionController;
 
 // Route::get('/', fn() =>  redirect(route('dashboard.index')));
 
-// Route::middleware(['auth', 'logged.session'])->group(function () {
 Route::prefix('admin')->middleware(['auth', 'logged.session'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
