@@ -54,7 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('administration/setting', SettingController::class);
     Route::get('administration/user-activity', [UserController::class, 'userActivity']);
 
-    Route::resource('order/import-order', ImportController::class);
 
     Route::resource('order/order', OrderController::class);
     Route::get('order/confirmed-order', [OrderController::class, 'confirmedOrder']);
