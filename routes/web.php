@@ -89,7 +89,6 @@ Route::get('development/cron-failed/{id}', [DevController::class, 'viewCronFaile
 Route::get('development/cron-failed-fixed/{id}', [DevController::class, 'fixedCronFailed']);
 Route::get('development/cron-failed-fixed-list', [DevController::class, 'fixedCronFailedList']);
 
-
 require __DIR__ . '/auth.php';
 require __DIR__ . '/dev.php';
 require __DIR__ . '/site.php';
