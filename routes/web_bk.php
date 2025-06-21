@@ -54,7 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('administration/setting', SettingController::class);
     Route::get('administration/user-activity', [UserController::class, 'userActivity']);
 
-    Route::get('order/confirmed-order', [OrderController::class, 'confirmedOrder']);
     Route::get('order/delivered-order', [OrderController::class, 'deliveredOrder']);
     Route::get('order/pickup-order', [OrderController::class, 'pickupedOrder']);
 
