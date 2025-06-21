@@ -27,7 +27,6 @@ use App\Http\Controllers\Pages\Solution\SolutionController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 // Route::get('/', fn() =>  redirect(route('dashboard.index')));
 
 Route::prefix('admin')->middleware(['auth', 'logged.session'])->group(function () {
