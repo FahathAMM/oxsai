@@ -54,7 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('administration/setting', SettingController::class);
     Route::get('administration/user-activity', [UserController::class, 'userActivity']);
 
-    Route::resource('order/shipping', ShipmentController::class);
     Route::get('order/shipping/export-single-order/{orderid}', [ShipmentController::class, 'exportBySingleOrder']);
     Route::get('order/order-invoice-pdf/{orderid}', [OrderController::class, 'previewInvoicePDF']);
     Route::get('order/order-invoice-pdf-download/{orderid}', [OrderController::class, 'downloadInvoicePDF']);
