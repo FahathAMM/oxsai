@@ -29,6 +29,7 @@ class ProductImage extends Model
             return $defaultImage;
         }
 
+
         // Check if the file exists in storage
         if (Storage::exists('public/' . $value)) {
             return asset('storage/' . $value);
