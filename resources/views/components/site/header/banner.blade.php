@@ -4,13 +4,13 @@
         <div class="swiper-wrapper">
 
             @php
-                $imageFiles = [6, 4, 7, 8, 9];
+                $imageFiles = [1, 2, 3];
                 // $imageFiles = [6, 5, 2, 3, 4, 1];
             @endphp
 
             @foreach ($imageFiles as $i)
                 @php
-                    $isBlckBg = in_array($i, [4, 5, 6, 7, 8, 9]);
+                    $isBlckBg = in_array($i, [1, 2]);
                 @endphp
 
                 <div class="swiper-slide">
