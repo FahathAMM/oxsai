@@ -2,12 +2,12 @@
     'categories' => $categories,
 ])
 
-<section class="flat-spacing-4">
+<section class="flat-spacing-4" id="popular-category-area">
     <div class="container">
         <div class="heading-section text-center wow fadeInUp">
             <h3 class="heading">Popular Categories</h3>
         </div>
-        <div class="flat-collection-circle wow fadeInUp" data-wow-delay="0.1s">
+        <div class="flat-collection-circle wow text-center fadeInUp" data-wow-delay="0.1s">
             <div dir="ltr" class="swiper tf-sw-categories" data-preview="5" data-tablet="4" data-mobile-sm="2"
                 data-mobile="2" data-space-lg="30" data-space-md="20" data-space="100" data-pagination="2"
                 data-pagination-md="4" data-pagination-lg="1">
@@ -38,10 +38,12 @@
                 </div>
 
             </div>
-            <div class="nav-prev-categories d-none d-lg-flex nav-sw style-line nav-sw-left"><i
-                    class="icon icon-arrLeft"></i></div>
-            <div class="nav-next-categories d-none d-lg-flex nav-sw style-line nav-sw-right"><i
-                    class="icon icon-arrRight"></i></div>
+            {{-- <div class="nav-prev-categories d-none d-lg-flex nav-sw style-line nav-sw-left">
+                <i class="icon icon-arrLeft"></i>
+            </div>
+            <div class="nav-next-categories d-none d-lg-flex nav-sw style-line nav-sw-right">
+                <i class="icon icon-arrRight"></i>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -75,5 +77,15 @@
 
     .hover-img:hover .img-style .image-container>img {
         transform: scale(1.06);
+    }
+
+    #popular-category-area .swiper.tf-sw-categories {
+        display: flex;
+        justify-content: center;
+    }
+
+    #popular-category-area .swiper-wrapper {
+        display: flex;
+        justify-content: center;
     }
 </style>
