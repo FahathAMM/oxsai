@@ -276,4 +276,9 @@
     .header-default .wrapper-header {
         min-height: 50px !important;
     }
+
+
+    .logo-header img {
+        width: 110px !important;
+    }
 </style>
